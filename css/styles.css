@@ -128,7 +128,10 @@ pre {
   #main-doc {
     position: absolute;
     top: 0;
-    left: 400px;
+    left: 350px;
+  }
+
+  .main-section header {
     max-width: 100%;
   }
 
