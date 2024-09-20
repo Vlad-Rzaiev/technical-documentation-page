@@ -36,8 +36,6 @@ ul {
   max-width: 767px;
   margin: 0 auto;
   padding: 20px;
-  /* height: 200px;
-  overflow: auto; */
 }
 
 .navbar-header {
@@ -98,19 +96,19 @@ pre {
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 20px;
-  width: 600px;
+  max-width: 600px;
   border: 1px solid #111010;
   padding: 8px;
   background-color: #b6b6b6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 816px) {
   #navbar {
     position: fixed;
     margin-left: 0;
     margin-right: auto;
     padding: 0;
-    width: 400px;
+    max-width: 400px;
     height: 100%;
     border-right: 1px solid #111010;
   }
@@ -131,6 +129,7 @@ pre {
     position: absolute;
     top: 0;
     left: 400px;
+    max-width: 100%;
   }
 
   .main-section p {
