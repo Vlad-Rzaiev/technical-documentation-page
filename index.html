@@ -9,34 +9,38 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>HTML Documentation</header>
-      <ul>
-        <li>
+      <header class="navbar-header">HTML Documentation</header>
+      <ul class="navbar-list">
+        <li class="navbar-item">
           <a class="nav-link" href="#the-structure-of-an-html-document"
             >The structure of an HTML document</a
           >
         </li>
-        <li>
+        <li class="navbar-item">
           <a class="nav-link" href="#header-of-the-html-page"
             >Header of the HTML page</a
           >
         </li>
-        <li>
+        <li class="navbar-item">
           <a class="nav-link" href="#html-page-coding">HTML page coding</a>
         </li>
-        <li><a class="nav-link" href="#key-words">Key words</a></li>
-        <li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#key-words">Key words</a>
+        </li>
+        <li class="navbar-item">
           <a class="nav-link" href="#description-of-page-content"
             >Description of page content</a
           >
         </li>
-        <li><a class="nav-link" href="#html-comments">HTML comments</a></li>
-        <li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#html-comments">HTML comments</a>
+        </li>
+        <li class="navbar-item">
           <a class="nav-link" href="#basic-elements-of-text-markup"
             >Basic elements of text markup</a
           >
         </li>
-        <li>
+        <li class="navbar-item">
           <a class="nav-link" href="#creating-an-html-document"
             >Creating an HTML document</a
           >
@@ -84,29 +88,25 @@
 &lt;body&gt; 
 &lt;h1&gt;Hello HTML!&lt;/h1&gt; 
 &lt;/body&gt; 
-&lt;/html&gt;
-              </pre
+&lt;/html&gt;</pre
             >
           </li>
         </ul>
       </section>
-
       <section class="main-section">
         <header id="header-of-the-html-page">Header of the HTML page</header>
         <p>
           The title of the page is the text that is displayed in the upper left
           corner of the browser, as well as in the name of the tabs. To set the
           page title, you need to use the <code>&lt;title&gt;</code> tag inside
-          the <code>&lt;head&gt;</code> tag. In the previous example, <br />
+          the <code>&lt;head&gt;</code> tag. In the previous example,
         </p>
         <pre>
 &lt;head&gt;
 &lt;title&gt;The structure of an HTML document&lt;/title&gt;
-&lt;/head&gt;
-          </pre
+&lt;/head&gt;</pre
         >
       </section>
-
       <section class="main-section">
         <header id="html-page-coding">HTML page coding</header>
         <ul>
@@ -130,18 +130,17 @@
           </li>
         </ul>
       </section>
-
       <section class="main-section">
         <header id="key-words">Key words</header>
         <ul>
           <li>
             <p>
-              There is a whole family of &lt;meta&gt; service tags, which are
-              called <strong>"meta tags"</strong>. They are used inside the
-              &lt;head&gt; tag. Meta tags are distinguished by a set of
-              attributes and their values. Here are some of the attributes:
-              <i>"content"</i>, <i>"http-equiv"</i>, <i>"name"</i>, and
-              <i>"scheme"</i>.
+              There is a whole family of <code>&lt;meta&gt;</code> service tags,
+              which are called <strong>"meta tags"</strong>. They are used
+              inside the <code>&lt;head&gt;</code> tag. Meta tags are
+              distinguished by a set of attributes and their values. Here are
+              some of the attributes: <i>"content"</i>, <i>"http-equiv"</i>,
+              <i>"name"</i>, and <i>"scheme"</i>.
             </p>
           </li>
           <li>
@@ -151,8 +150,8 @@
               is set as follows:
             </p>
             <pre>
-&lt;meta name="keywords" content="different, key, words"&gt;
-            </pre>
+&lt;meta name="keywords" content="different, key, words"&gt;</pre
+            >
           </li>
           <li>
             <p>
@@ -164,7 +163,6 @@
           </li>
         </ul>
       </section>
-
       <section class="main-section">
         <header id="description-of-page-content">
           Description of page content
@@ -176,8 +174,8 @@
               of the page. It is set as follows:
             </p>
             <pre>
-&lt;meta name="description" content="brief description"&gt;
-            </pre>
+&lt;meta name="description" content="brief description"&gt;</pre
+            >
           </li>
           <li>
             <p>
@@ -188,16 +186,13 @@
           </li>
         </ul>
       </section>
-
       <section class="main-section">
         <header id="html-comments">HTML comments</header>
         <p>
           By the way, you can see the following code fragments in the HTML
-          editor:
+          editor: <br />
+          <code> &lt;!-- Some text --&gt; </code>
         </p>
-        <pre>
-&lt;!-- Some text --&gt;
-        </pre>
         <p>
           These are called "comments" and the browser does not display them on
           the page.
@@ -218,11 +213,10 @@
           </li>
         </ul>
         <p>
-          Comments can be used anywhere on the page except the &lt;title&gt; tag
-          - inside which they do not work.
+          Comments can be used anywhere on the page except the
+          <code>&lt;title&gt;</code> tag - inside which they do not work.
         </p>
       </section>
-
       <section class="main-section">
         <header id="basic-elements-of-text-markup">
           Basic elements of text markup
@@ -230,21 +224,21 @@
         <p>The main elements of text formatting in html are tags:</p>
         <ul>
           <li>
-            <p>p - is used to divide the text into paragraphs;</p>
+            <p><code>p</code> - is used to divide the text into paragraphs;</p>
           </li>
           <li>
             <p>
-              h1, h2, ..... h6 - are used to create headings of 1,2 ... 6
-              levels, respectively;
+              <code>h1, h2, ..... h6</code> - are used to create headings of 1,2
+              ... 6 levels, respectively;
             </p>
           </li>
           <li>
-            <p>br - used to move a line;</p>
+            <p><code>br</code> - used to move a line;</p>
           </li>
           <li>
             <p>
-              div, span - використовуються для виділення частини документа
-              певним способом.
+              <code>div, span</code> - використовуються для виділення частини
+              документа певним способом.
             </p>
           </li>
         </ul>
@@ -253,7 +247,6 @@
           test web page is formatted. But they may be enough to create it.
         </p>
       </section>
-
       <section class="main-section">
         <header id="creating-an-html-document">
           Creating an HTML document
