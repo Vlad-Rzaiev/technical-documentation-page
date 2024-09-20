@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#the-structure-of-an-html-document"
+            >The structure of an HTML document</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#header-of-the-html-page"
+            >Header of the HTML page</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#html-page-coding">HTML page coding</a>
+        </li>
+        <li><a class="nav-link" href="#key-words">Key words</a></li>
+        <li>
+          <a class="nav-link" href="#description-of-page-content"
+            >Description of page content</a
+          >
+        </li>
+        <li><a class="nav-link" href="#html-comments">HTML comments</a></li>
+        <li>
+          <a class="nav-link" href="#basic-elements-of-text-markup"
+            >Basic elements of text markup</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#creating-an-html-document"
+            >Creating an HTML document</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section">
+        <header id="the-structure-of-an-html-document">
+          The structure of an HTML document
+        </header>
+        <ul>
+          <li>
+            <p>
+              Every HTML document that conforms to the HTML specification of any
+              version, must start with the HTML version declaration line
+              <code> &lt;!DOCTYPE ...&gt;</code> which usually looks something
+              like this: <code> &lt;!DOCTYPE html&gt;</code>. In this case we
+              are talking browser that HTML conforms to the international
+              specification version 5.
+            </p>
+          </li>
+          <li>
+            <p>
+              No need to try to remember this line. The main thing is to know
+              that it is necessary. After all, it helps to make a site that will
+              look the same in all browsers (usually Mozilla Firefox, Google
+              Chrome, Opera, Internet Explorer).
+            </p>
+          </li>
+          <li>
+            <p>
+              Next, the beginning and end of the document are marked with
+              <code>&lt;html&gt; </code> and <code>&lt;/html&gt;</code> tags,
+              respectively. Inside these tags should be the head
+              <code>(&lt;head&gt;&lt;/head&gt;)</code> and document body
+              <code>(&lt;body&gt;&lt;/body&gt;)</code> tags.
+            </p>
+            <pre>
+&lt;!DOCTYPE HTML&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;The structure of an HTML document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;h1&gt;Hello HTML!&lt;/h1&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;
+              </pre
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section">
+        <header id="header-of-the-html-page">Header of the HTML page</header>
+        <p>
+          The title of the page is the text that is displayed in the upper left
+          corner of the browser, as well as in the name of the tabs. To set the
+          page title, you need to use the <code>&lt;title&gt;</code> tag inside
+          the <code>&lt;head&gt;</code> tag. In the previous example, <br />
+        </p>
+        <pre>
+&lt;head&gt;
+&lt;title&gt;The structure of an HTML document&lt;/title&gt;
+&lt;/head&gt;
+          </pre
+        >
+      </section>
+
+      <section class="main-section">
+        <header id="html-page-coding">HTML page coding</header>
+        <ul>
+          <li>
+            <p>
+              The encoding of an HTML page must be specified so that the web
+              browser can correctly display the text on the page. If the browser
+              incorrectly "guesses" the encoding, characters will be displayed
+              instead of text. To inform the browser of the coding of the HTML
+              page, it is necessary to use the tag inside the
+              <code>&lt;head&gt;</code> tag:
+            </p>
+            <pre>&lt;meta charset="encoding name"&gt;</pre>
+          </li>
+          <li>
+            <p>
+              The most common modern encoding is utf-8. Use it in all your
+              projects. For Cyrillic in Windows, the charset was often set as
+              windows-1251. But now it is considered a bad practice.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section">
+        <header id="key-words">Key words</header>
+        <ul>
+          <li>
+            <p>
+              There is a whole family of &lt;meta&gt; service tags, which are
+              called <strong>"meta tags"</strong>. They are used inside the
+              &lt;head&gt; tag. Meta tags are distinguished by a set of
+              attributes and their values. Here are some of the attributes:
+              <i>"content"</i>, <i>"http-equiv"</i>, <i>"name"</i>, and
+              <i>"scheme"</i>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Meta tags store useful information for browsers and search
+              engines. One such tag is a description of the page's keywords. It
+              is set as follows:
+            </p>
+            <pre>
+&lt;meta name="keywords" content="different, key, words"&gt;
+            </pre>
+          </li>
+          <li>
+            <p>
+              In the content attribute, the most important words from the
+              content of the page are listed through a comma. Earlier, this tag
+              was very important for search engines. What is the state of
+              affairs now - the big secret of search engines.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section">
+        <header id="description-of-page-content">
+          Description of page content
+        </header>
+        <ul>
+          <li>
+            <p>
+              Another useful meta tag for search engines is a short description
+              of the page. It is set as follows:
+            </p>
+            <pre>
+&lt;meta name="description" content="brief description"&gt;
+            </pre>
+          </li>
+          <li>
+            <p>
+              The content attribute should contain a summary or abstract of the
+              page, which is often used by search engines when displaying search
+              results.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section">
+        <header id="html-comments">HTML comments</header>
+        <p>
+          By the way, you can see the following code fragments in the HTML
+          editor:
+        </p>
+        <pre>
+&lt;!-- Some text --&gt;
+        </pre>
+        <p>
+          These are called "comments" and the browser does not display them on
+          the page.
+        </p>
+        <p>Comments are usually used in the following cases:</p>
+        <ul>
+          <li>
+            <p>
+              for commenting the code (it is always useful to leave a hint);
+            </p>
+          </li>
+          <li>
+            <p>
+              to temporarily disable the code (deleting the code is
+              inconvenient, as it will have to be restored, and commenting and
+              then uncommenting is the best solution).
+            </p>
+          </li>
+        </ul>
+        <p>
+          Comments can be used anywhere on the page except the &lt;title&gt; tag
+          - inside which they do not work.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <header id="basic-elements-of-text-markup">
+          Basic elements of text markup
+        </header>
+        <p>The main elements of text formatting in html are tags:</p>
+        <ul>
+          <li>
+            <p>p - is used to divide the text into paragraphs;</p>
+          </li>
+          <li>
+            <p>
+              h1, h2, ..... h6 - are used to create headings of 1,2 ... 6
+              levels, respectively;
+            </p>
+          </li>
+          <li>
+            <p>br - used to move a line;</p>
+          </li>
+          <li>
+            <p>
+              div, span - використовуються для виділення частини документа
+              певним способом.
+            </p>
+          </li>
+        </ul>
+        <p>
+          The given tags are far from a complete list of elements with which the
+          test web page is formatted. But they may be enough to create it.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <header id="creating-an-html-document">
+          Creating an HTML document
+        </header>
+        <ul>
+          <li>
+            <p>
+              In order to create a web page, you must first create a text
+              document in any text editor. For example, by right-clicking and
+              selecting New→Text Document from the context menu, which can then
+              be opened in Notepad.
+            </p>
+          </li>
+          <li>
+            <p>
+              The html code is typed in this program. After that, you need to
+              save the document under the name index.html
+            </p>
+          </li>
+          <li>
+            <p>
+              There are many editors, online and offline, that provide many
+              useful tools for web developers. For example, VSCode, Sublime
+              Text, Notepad++, Brackets, CodePen, JSFiddle, etc.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
